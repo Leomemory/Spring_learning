@@ -51,3 +51,13 @@ Spring从入门到进阶
    @AfterThrowing异常抛出通知，相当于ThrowAdvice  
    @After 最终final通知，不管是否异常，该通知都会执行
    2. xml方式编写切面，完成切面类的配置及配置AOP完成增强
+ 
+ 6. JDBC Template  
+    1. execute方法：update与batchUpdate，query与queryXXX
+    2. call方法：
+    3. update方法：对数据进行增删改操作
+    4. batchUpdate方法：批量增删改操作
+    5. 查询简单数据项：T queryForObject(获取一个)，List<T> queryForList（获取多个）
+    6. 查询复杂对象（封装为map）：Map queryForMap(获取一个)，List<Map<String,Object>> queryForLi（获取多个）
+    7. 查询复杂对象（封装为实体对象）：T queryForObject（RowMapper<T>）(获取一个)  
+                                   List<T> query（RowMapper<T>）(获取多个) 
