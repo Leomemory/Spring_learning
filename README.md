@@ -34,3 +34,11 @@ Spring从入门到进阶
    2. Spring的属性注入-注解方式
    
    3. Spring的其他注解
+
+4. Spring的AOP
+   1. 使用代理，横向抽取，代码增强
+   2. 使用CGLIB生成代理
+   3. 前置通知 MethodBeforeAdvice,Spring 的 AOP 产生代理对象
+   4. 环绕通知 MethodInterceptor,一般的切面是使用通知作为切面,因为要对目标类的某个方法进行增强就需要配置一个带有切入点的切面
+   5. 自动创建代理
+   6. 自动创建代理并配置切面
