@@ -42,3 +42,12 @@ Spring从入门到进阶
    4. 环绕通知 MethodInterceptor,一般的切面是使用通知作为切面,因为要对目标类的某个方法进行增强就需要配置一个带有切入点的切面
    5. 自动创建代理
    6. 自动创建代理并配置切面
+   
+5. 基于AspectJ的AOP开发
+   1. 注解开发，自动代理  
+   @Before 前置通知，相当于BeforeAdvice  
+   @AfterReturning 后置通知，相当于AfterReturningAdvice
+   @Around 环绕通知，相当于MethodInterceptor 
+   @AfterThrowing异常抛出通知，相当于ThrowAdvice  
+   @After 最终final通知，不管是否异常，该通知都会执行
+   2. xml方式编写切面，完成切面类的配置及配置AOP完成增强
