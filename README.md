@@ -61,3 +61,9 @@ Spring从入门到进阶
     6. 查询复杂对象（封装为map）：Map queryForMap(获取一个)，List<Map<String,Object>> queryForLi（获取多个）
     7. 查询复杂对象（封装为实体对象）：T queryForObject（RowMapper<T>）(获取一个)  
                                    List<T> query（RowMapper<T>）(获取多个) 
+                                   
+7. Spring 事务管理
+   1. 编程式的事务管理
+   2. 使用XML配置声明式的事务管理
+   3. 使用XML配置声明式的事务管理,基于tx/aop 
+   4. 使用注解配置声明式事务
