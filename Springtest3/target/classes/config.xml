@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+       <!--开启注解扫描，到配置的包里面扫描类、方法、属性上面是否有注解-->
+      <context:component-scan base-package="com.imooc"/>
+
+       <!--也可以这样开启注解扫描,只会扫描属性上面的注解。实际开发中用到的并不多,不推荐-->
+<!--       <context:annotation-config/>-->
+
+       <bean id="ProductService" class="com.imooc.demo3.ProductService">
+<!--           <property name="CategoryDao" ref="CategoryDao"/>-->
+<!--           <property name="ProductDao" ref="ProductDao"/>-->
+       </bean>
+       <bean id="CategoryDao" class="com.imooc.demo3.CategoryDao" />
+       <bean id="ProductDao" class="com.imooc.demo3.ProductDao" />
+</beans>

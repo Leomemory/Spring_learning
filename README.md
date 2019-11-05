@@ -22,4 +22,15 @@ Spring从入门到进阶
       数组类型的属性注入 List  
       集合类型的属性注入 Set  
       集合类型的属性注入 Map  
-      类型的属性注入  Properties  
+      类型的属性注入  Properties
+
+3. Spring Bean管理（注解方式)  
+   1. 使用注解定义Bean:  
+   @Component  描述Spring框架中Bean (下面👇三个功能和@Component等效)  
+   @Repository 用于对DAO实现类进行标注  
+   @Service 用于对Service实现类进行标注  
+   @Controller 用于对Controller实现类进行标注  
+   
+   2. Spring的属性注入-注解方式
+   
+   3. Spring的其他注解
